@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: bg 5s forwards;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes bg {
+  0% {
+    background-image: url(images/2023bg.jpg);
+  }
+  100% {
+    background-image: url(images/blue_fireworks.jpg);
+  }
+}
+.year {
+  font-family: "Poppins", sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-size: 90px;
+  justify-content: left;
+  display: flex;
+  color: gold;
+  transition: color 2s ease-in;
+}
+.year:hover {
+  color: aqua;
+}
+
+.text {
+  font-family: "Merienda", cursive;
+  font-size: 30px;
+  text-align: right;
+  color: rgb(164, 237, 104);
+  align-items: bottom;
+  transform: rotate(25deg);
+  transform-origin: bottom center;
+}

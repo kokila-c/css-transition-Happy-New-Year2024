@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New year wishes</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="year">
+      <h2 class="oldYear">2023</h2>
+    </div>
+    <div class="text">
+      <h1>Happy New Year</h1>
+    </div>
+    <script>
+      /*to change 2023 to 2024*/
+      document.addEventListener("DOMContentLoaded", function () {
+        // waits for HTML to load fully
+        setTimeout(function () {
+          // creates a delay to start the function
+          var oldYearElement = document.querySelector(".oldYear"); //gets the HTML input
+
+          oldYearElement.textContent = "2024"; // changes the year
+        }, 3000); // i have set delay time to 3000s
+      });
+    </script>
+  </body>
+</html>
